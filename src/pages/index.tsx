@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { FaSquareFacebook, FaSquareGithub, FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
               <input
                 type="text"
                 value="€1265,02"
-                className="text-5xl sm:text-[5rem] font-bold text-right w-full bg-transparent border-0 bg-black text-white rounded-3xl p-2 px-8"
+                className="text-5xl sm:text-[5rem] font-bold text-right w-full  border-0 bg-black text-white rounded-3xl p-2 px-8"
               />
 
               <div className="text-xs">
@@ -48,7 +49,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-black">What is this..?</h3>
               <div className="text-3xl flex flex-col gap-8">
                 <span>
-                  Hi, what you're looking at is a simple man's journey to, hopefully, meeting a person named <h1 className="font-bold inline">Grigori Perelman</h1>.
+                  Hi, what you&apos;re looking at is a simple man&apos;s journey to, hopefully, meeting a person named <h1 className="font-bold inline">Grigori Perelman</h1>.
                 </span>
 
                 <span className="block text-sm rounded-lg p-4 bg-black/10 text-black">
@@ -70,9 +71,9 @@ export default function Home() {
                 </div>
 
                 <div className="grid grid-cols-1 gap-2">
-                  <button className="bg-black text-white rounded-lg p-4 text-sm font-bold block">
-                    Donate €0,01
-                  </button>
+                  <Link href="https://buymeacoffee.com/roadtoperelman" className="bg-black text-white rounded-lg p-4 text-sm font-bold flex items-center justify-center">
+                    Buy me a thumbs up 👍
+                  </Link>
                   <button className="bg-transparent text-black rounded-lg p-4 text-sm font-bold block">
                     Request refund
                   </button>
